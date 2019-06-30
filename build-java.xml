@@ -1,4 +1,4 @@
-<project name="python" default="dist" basedir=".">
+<project name="python3" default="dist" basedir=".">
   <description>
     Build Python support libraries for voc
   </description>
@@ -15,7 +15,7 @@
   </target>
 
   <target name="compile_stdlib" description="Compile the standard library">
-    <exec executable="python">
+    <exec executable="python3">
       <arg value="tools/compile_stdlib.py"/>
       <arg value="--fast"/>
       <arg value="java"/>

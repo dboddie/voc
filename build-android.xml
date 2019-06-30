@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="python" default="dist">
+<project name="python3" default="dist">
 
   <!-- if sdk.dir was not set from one of the property file, then
        get it from the ANDROID_HOME env var.
@@ -30,7 +30,7 @@
       <classpath path="${sdk.dir}/platforms/${target.platform}/android.jar" />
     </javac>
 
-    <exec executable="python">
+    <exec executable="python3">
       <arg value="tools/compile_stdlib.py"/>
       <arg value="--fast"/>
       <arg value="android"/>
